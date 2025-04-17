@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+  int arr[]={1,2,3,4,5},key,flag=0,i;
+  printf("enter key value:");
+  scanf("%d",&key);
+  for(i=0;i<5;i++)
+    {
+      if(key==arr[i])
+        {
+           flag=1;
+           break;
+        }
+    }
+   if(flag==1)
+         printf("the element is found at %d",i);
+   else
+         printf ("the element is not found");
+  return 0;
+  }
